@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace WebSolution.Controllers
+namespace WebApi.Controllers
 {
     public class ValuesController : ApiController
     {
