@@ -19,11 +19,11 @@ namespace ConsoleApp
             try
             {
                 MailMessage mm = new MailMessage();
-                MailAddress Fromma = new MailAddress("1020627112@qq.com");
-                MailAddress Toma = new MailAddress("1215063062@qq.com", null);
+                MailAddress Fromma = new MailAddress("xxx@qq.com");
+                MailAddress Toma = new MailAddress("xxx@qq.com", null);
                 mm.From = Fromma;
                 //收件人
-                mm.To.Add("1020627112@qq.com");
+                mm.To.Add("xxx@qq.com");
                 //邮箱标题
                 mm.Subject = "Hello Dear:";
                 mm.IsBodyHtml = true;
@@ -38,8 +38,8 @@ namespace ConsoleApp
                 mm.CC.Add(Toma);
                 SmtpClient sc = new SmtpClient();
                 NetworkCredential nc = new NetworkCredential();
-                nc.UserName = "1020627112@qq.com";//你的邮箱地址
-                nc.Password = "whl2009zsw2010Z";//你的邮箱密码,这里的密码是xxxxx@qq.com邮箱的密码，特别说明下~
+                nc.UserName = "xxx@qq.com";//你的邮箱地址
+                nc.Password = "xxx";//你的邮箱密码,这里的密码是xxxxx@qq.com邮箱的密码，特别说明下~
                 sc.UseDefaultCredentials = true;
                 sc.DeliveryMethod = SmtpDeliveryMethod.Network;
                 sc.Credentials = nc;
